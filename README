@@ -1,0 +1,7 @@
+### starting a server instead of django-admin :
+
+python -m django startproject myproject
+
+### development server :
+
+py manage.py runserver
