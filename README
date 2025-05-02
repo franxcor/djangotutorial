@@ -2,6 +2,12 @@
 
 python -m django startproject myproject
 
-### development server :
+### running the development server :
 
 py manage.py runserver
+
+## migrations are how Django stores changes to your models
+
+python manage.py makemigrations polls
+
+python manage.py sqlmigrate polls 0001
