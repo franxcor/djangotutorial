@@ -10,4 +10,18 @@ py manage.py runserver
 
 python manage.py makemigrations polls
 
-python manage.py sqlmigrate polls 0001
+python manage.py sqlmigrate polls 0001 -> sql migrations
+--> then run migrate again to create the model tables in database (synchronizes the unapplied migrations to the database)
+
+## in python shell (python manage.py shell) (exit() to exit)
+
+make new objects/classes liek varName=Classname(classvar1 = value, classvar2 = value2)
+must save after each creation & edit
+to view -> Classname.objects.all()
+to filter -> Classname.objects.filter(classvar=value);
+search by value -> Classname.objects.filter(classvar\_\_startswith="What")
+
+## admin
+
+python manage.py createsuperuse
+admin, admin@example.com, password
