@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="{% static 'polls/style.css' %}"
     </head>
     <body>
         <h1> Question {{question.question_id}} Results</h1>
@@ -14,6 +16,6 @@
                 {{choice.votes}} vote{{choice.votes|pluralize}}</li>
                 {% endfor %}
         </ul>
-        <a href="{% url 'polls:detail' question.id %}">Vote Again</a>
+        <a class="voteAgain" href="{% url 'polls:detail' question.id %}">Vote Again</a>
     </body>
 </html>

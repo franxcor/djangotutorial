@@ -68,4 +68,8 @@ then the template name is used to show what format it should display it in
 ## templates
 
 "dot-lookup syntax to access variable attributes"
-{%  python code %} + regular html code
+{%  python code %} + regular html code (models will fill them in)
+
+## static
+
+built in django like templates

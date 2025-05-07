@@ -1,7 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="{% static 'polls/style.css' %}">
     </head>
     <body>
         <h1>  Question {{question.id}} Detail Page</h1>
@@ -23,7 +25,7 @@
 
                 <!-- this creates the choices + labels based on the values -->
                 {% for choice in question.choice_set.all %}
-                <input type="radio" name="choice" id="choice{{ forloop.counter}}" value="{{ choice.id }}">
+                <input type="radio" class="radioChoice" name="choice" id="choice{{ forloop.counter}}" value="{{ choice.id }}">
                 <label for="choice{{ forloop.counter }}"> {{choice.choice_text}} </label> <br>
                 {% endfor %} 
             </fieldset>

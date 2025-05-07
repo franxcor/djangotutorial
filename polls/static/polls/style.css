@@ -1,0 +1,44 @@
+h1, h3 {
+    margin-left: 20px;
+    color: rgb(90, 71, 44);
+}
+
+li a, label{
+    color: rgb(126, 100, 65);
+    font-size: 18;
+}
+li {
+    color: rgb(90, 71, 44);
+    list-style: none;
+    font-weight: bold;
+}
+
+input, .voteAgain {
+    color: papayawhip;
+    background-color: rgb(126, 100, 65);
+    font-weight: bold;
+    font-size: 16pt;
+    border: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.radioChoice{
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+}
+
+fieldset {
+    padding-top: 0px;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+legend {
+    padding: 0;
+    margin-bottom: 0;
+}
+body {
+    background:white url("images/background.jpg") no-repeat;
+}
