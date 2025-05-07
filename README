@@ -26,11 +26,16 @@ search by value -> Classname.objects.filter(classvar\_\_startswith="What")
 python manage.py createsuperuse
 admin, admin@example.com, password
 
-### views
+## views
 
 a type of web page that serves a specific function & has a specific template (this is so the items are not hard coded)
 
 the render page can use a loader, or use the render through shortcut for templates
+
+### generic views
+
+built in common views -> don't need to hard code them with the python
+a generic view needs to know what model it will be using
 
 ### templates
 
