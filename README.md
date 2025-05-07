@@ -1,3 +1,5 @@
+# Important commands
+
 ### starting a server instead of django-admin :
 
 python -m django startproject myproject
@@ -5,6 +7,8 @@ python -m django startproject myproject
 ### running the development server :
 
 py manage.py runserver
+
+# Important information
 
 ## migrations are how Django stores changes to your models
 
@@ -36,8 +40,9 @@ the render page can use a loader, or use the render through shortcut for templat
 
 built in common views -> don't need to hard code them with the python
 a generic view needs to know what model it will be using
+then the template name is used to show what format it should display it in
 
-### templates
+## templates
 
 "dot-lookup syntax to access variable attributes"
 {%  python code %} + regular html code
