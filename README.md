@@ -8,6 +8,10 @@ python -m django startproject myproject
 
 py manage.py runserver
 
+### running tests:
+
+py manage.py test (appname)
+
 # Important information
 
 ## migrations are how Django stores changes to your models
@@ -24,6 +28,25 @@ must save after each creation & edit
 to view -> Classname.objects.all()
 to filter -> Classname.objects.filter(classvar=value);
 search by value -> Classname.objects.filter(classvar\_\_startswith="What")
+
+## Automated Testing
+
+This is important for efficiecy when apps get more complex and manual testing may not be reliable/practical
+
+Writing a test will have what you are testing + the expected results (using assertIs)
+
+test name functions must begin with "test"
+
+good practices: descriptive naming, separate testclasses for each model/view
+
+Selenium -> tests whether the html renders in a browser
+continuous integration (automated testing)
+django testing link : https://docs.djangoproject.com/en/5.2/topics/testing/
+
+### Client Testing
+
+client simulates a user interacting with code
+setup the test environment (template renderer) by importing it and running
 
 ## admin
 
