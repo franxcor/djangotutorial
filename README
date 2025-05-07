@@ -25,3 +25,14 @@ search by value -> Classname.objects.filter(classvar\_\_startswith="What")
 
 python manage.py createsuperuse
 admin, admin@example.com, password
+
+### views
+
+a type of web page that serves a specific function & has a specific template (this is so the items are not hard coded)
+
+the render page can use a loader, or use the render through shortcut for templates
+
+### templates
+
+"dot-lookup syntax to access variable attributes"
+{%  python code %} + regular html code
