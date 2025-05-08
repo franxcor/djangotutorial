@@ -28,6 +28,10 @@ input, .voteAgain {
     margin-left: 20px;
     padding: 0;
 }
+.note {
+    margin-left: 20px;
+    color: rgb(90, 71, 44);
+}
 
 fieldset {
     padding-top: 0px;

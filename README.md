@@ -1,3 +1,6 @@
+This is following the django polls tutorial 1-7
+The following notes are not 'tutorials' but rather things that I thought were important when reading through the tutorial.
+
 # Important commands
 
 ### starting a server instead of django-admin :
@@ -52,6 +55,11 @@ setup the test environment (template renderer) by importing it and running
 
 python manage.py createsuperuse
 admin, admin@example.com, password
+
+### customizing admin page
+
+the admin page can use templates, and has some default templates in built into django
+to customize admin using css, edit admin/index.html (similar to the base_site.html method)
 
 ## views
 
