@@ -81,3 +81,7 @@ then the template name is used to show what format it should display it in
 ## static
 
 built in django like templates
+
+### django github:
+
+https://github.com/django/django/tree/main
